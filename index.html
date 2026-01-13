@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>O Mal que a Música Move</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
@@ -12,7 +12,7 @@
     <section class="intro">
       <h1>🕯️ O Mal que a Música Move</h1>
       <p>
-        A música ecoa na cidade de Vale das Cordas.  
+        A música ecoa em Vale das Cordas.  
         Escolha quem você é… antes que o som escolha por você.
       </p>
     </section>
@@ -20,33 +20,24 @@
     <section class="characters">
       <h2>Escolha sua personagem</h2>
 
-     <div class="card" onclick="selectCharacter('Antonio Melo')">
-  <h3>Antonio “Melo”</h3>
-</div>
+      <div class="card" onclick="escolherPersonagem(1)">
+        <h3>Antonio “Melo”</h3>
+        <p>Combatente • Guitarrista • Estrada</p>
+      </div>
 
-<div class="card" onclick="selectCharacter('Leonardo Martins')">
-  <h3>Leonardo Martins</h3>
-</div>
+      <div class="card" onclick="escolherPersonagem(2)">
+        <h3>Leonardo Martins</h3>
+        <p>Ocultista • Fotógrafo • Ritual</p>
+      </div>
     </section>
 
     <section class="dm">
-      <button onclick="enterDM()">🔐 Entrar como DM</button>
+      <button onclick="entrarDM()">🔐 Entrar como DM</button>
     </section>
-<button
-  id="resetMesaBtn"
-  onclick="resetarMesa()"
-  style="display:none;"
->
-  🔥 Resetar Mesa (DM)
-</button>
 
   </main>
 
-  <!-- SUPABASE PRIMEIRO -->
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-
-  <!-- SEU SCRIPT DEPOIS -->
-  <script src="script.js"></script>
-
+  <script src="main.js"></script>
 </body>
 </html>
